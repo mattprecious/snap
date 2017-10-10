@@ -4,10 +4,11 @@ import java.awt.image.BufferedImage
 import java.io.File
 import javax.imageio.ImageIO
 
-/** Takes an image and runs edge detection on its luminance channel. Four images will be created:
+/**
+ * Takes an image and runs edge detection on its luminance channel. Four images will be created:
  * - One using the [Laplace operator](https://en.wikipedia.org/wiki/Discrete_Laplace_operator)
  * - One using the horizontal approximation of the [Sobel operator](https://en.wikipedia.org/wiki/Sobel_operator)
- * - One using the vertical approximation of the [Sobel operator](https://en.wikipedia.org/wiki/Sobel_operator
+ * - One using the vertical approximation of the [Sobel operator](https://en.wikipedia.org/wiki/Sobel_operator)
  * - One for the combined [Sobel](https://en.wikipedia.org/wiki/Sobel_operator) approximations
  */
 object EdgeDetector {
