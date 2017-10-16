@@ -20,11 +20,11 @@ object EdgeDetector {
     ImageIO.write(detectEdges(yChannel, Kernel.LAPLACE), "jpg",
         File("out_edges_laplace.jpg"))
     ImageIO.write(detectEdges(yChannel, Kernel.SOBEL_HORIZONTAL), "jpg",
-        File("out_edges_sobel_horizontal.png"))
+        File("out_edges_sobel_horizontal.jpg"))
     ImageIO.write(detectEdges(yChannel, Kernel.SOBEL_VERTICAL), "jpg",
-        File("out_edges_sobel_vertical.png"))
+        File("out_edges_sobel_vertical.jpg"))
     ImageIO.write(detectEdges(yChannel, Kernel.SOBEL_BOTH), "jpg",
-        File("out_edges_sobel_combined.png"))
+        File("out_edges_sobel_combined.jpg"))
   }
 
   fun detectEdges(image: BufferedImage, kernel: Kernel): BufferedImage {
